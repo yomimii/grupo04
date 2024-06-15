@@ -1,3 +1,5 @@
 docker pull mysql:8
 
 docker run -d -p 3307:3306 --name oficina-db -e MYSQL_ROOT_PASSWORD=mysql@ -e MYSQL_ROOT_HOST='%' -e MYSQL_DATABASE=oficina_db mysql:8 --default-authentication-plugin=mysql_native_password
+
+//atualizacao que precisei fazer para subir o banco de dados no docker//docker run -d -p 3307:3306 --name oficina-db -e MYSQL_ROOT_PASSWORD='rootpassword' -e MYSQL_ROOT_HOST='%' -e MYSQL_DATABASE=oficina_db mysql:8
